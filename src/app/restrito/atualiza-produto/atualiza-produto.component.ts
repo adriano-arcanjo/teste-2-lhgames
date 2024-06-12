@@ -37,7 +37,7 @@ export class AtualizaProdutoComponent implements OnInit {
   }
 
   atualizar(id: number) {
-    this._produtoService.atualizarProduto(id, this.produto).subscribe(
+    this._produtoService.atualizaProduto(id, this.produto).subscribe(
       
       produto => { this.produto = new Produto(0, "", "", "", 0) },
       err => { alert("Erro ao atualizar") }

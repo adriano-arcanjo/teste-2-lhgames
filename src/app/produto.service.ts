@@ -7,10 +7,8 @@ import { Produto } from './models/Produto.model';
   providedIn: 'root'
 })
 export class ProdutoService {
-  atualizarProduto(id: number, produto: Produto) {
-    throw new Error('Method not implemented.');
-  }
-
+  
+    
   private url = "http://localhost:3000/produtos";
 
   constructor(private _httpClient: HttpClient) { }
